@@ -28,8 +28,8 @@ import java.util.Random;
 
 public class Animation extends View {
 
-	static int SCREEN_WIDTH=640;
-	static int SCREEN_HEIGHT=640;
+	static int SCREEN_WIDTH=768;
+	static int SCREEN_HEIGHT=1024;
 
 	static Random random=new Random();
 
@@ -43,7 +43,7 @@ public class Animation extends View {
 	double destX,destY;
 	
 	double x,y,r,a;
-	double speed=10;
+	double speed=50;
 
 	boolean hold=false;
 	int nclicks=0;
@@ -91,7 +91,9 @@ public class Animation extends View {
 
 			x=SCREEN_WIDTH/2;
 			y=SCREEN_HEIGHT/2;
+
 			r=32;
+
 			a=Math.random()*360*DEG2RAD;
 
 			destX=x;
@@ -121,7 +123,7 @@ public class Animation extends View {
 
 		double aa=a+15*DEG2RAD;
 		double ab=a-15*DEG2RAD;
-		double ar=500; 
+		double ar=1024; 
 		
 		canvas.drawLine((int)(x+cx),(int)(y+cy),
 		(int)(ar*Math.cos(aa)+(x+cx)),

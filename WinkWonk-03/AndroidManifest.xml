@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0"?>
 <manifest 
     	xmlns:android="http://schemas.android.com/apk/res/android"
     	package="edu.hogwarts.siesta.winkwonk">
-
-	<uses-permission android:name="android.permission.INTERNET" />
     
-	<application 
-			android:icon="@drawable/icon"
-			android:usesCleartextTraffic="true">
+	<application android:icon="@drawable/icon">
 
 		<activity	
 				android:name=".WinkWonk"
